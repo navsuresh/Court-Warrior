@@ -1,0 +1,367 @@
+
+
+    <!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+
+    <meta charset="utf-8">
+
+    <title>ONN Sports Network</title>
+
+    <style type="text/css">
+	
+		body{
+			 background-image:url("bglogo1.jpg");
+			 
+			 background-size:cover;
+			 
+			 background-attachment:fixed;
+			
+			}
+
+        ul{
+
+            padding: 0;
+			margin:0;
+			border:0;
+
+            list-style: none;
+
+            background: black;
+
+        }
+
+        ul li{
+
+            display: inline-block;
+
+            position: relative;
+
+            line-height: 21px;
+
+            text-align: left;
+
+        }
+
+        ul li a{
+
+            display: block;
+
+            padding: 8px 25px;
+
+            color: white;
+
+            text-decoration: none;
+
+        }
+
+        ul li a:hover{
+
+            color: #fff;
+
+            background: grey	;
+
+        }
+
+        ul li ul.dropdown{
+
+            min-width: 100%; /* Set width of the dropdown */
+
+            background: black;
+
+            display: none;
+
+            position: absolute;
+
+            z-index: 999;
+
+            left: 0;
+
+        }
+
+        ul li:hover ul.dropdown{
+
+            display: block; /* Display the dropdown */
+
+        }
+
+        ul li ul.dropdown li{
+
+            display: block;
+
+        }
+		div img {
+			width:75%;
+			position:relative;
+			top:50px;
+
+			left:12.5%;
+			
+		}
+		div p{
+		color:white;
+		position:relative;
+		bottom:2px;
+		background-color:rgba(0,0,0,0.5);
+		padding-bottom:30px;
+		margin:0px 12.5%;
+		text-align:center;
+		}
+		table tr,td
+		{
+		color:white;
+			border-width:3px;
+			border-color:blue;
+		}
+		.Eastern{
+		text-align:center;
+		background-color:rgb(78,78,78);
+		position:relative;
+		right:100px;
+		border: 1px solid black;
+		top:100px;
+		
+		
+		}
+		.Western{
+		text-align:center;
+		background-color:rgb(78,78,78);
+		position:relative;
+		right:270px;	
+		border: 1px solid black;
+		bottom:97.5px;
+		
+		}
+		.bg{
+		background-color:grey;
+		box-shadow: 0 0 50px black;
+		position:relative;
+		width:55%;
+		padding-bottom:50px;
+		left:22.5%;
+		}
+		.bg1{
+		background-color:grey;
+		box-shadow: 0 0 50px black;
+		position:relative;
+		width:55%;
+		top:30px;
+		left:22.5%;
+
+
+		}
+    </style>
+
+    </head>
+
+    <body>
+		<img src = "logo.png" align = center width = 100px>
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">Scores</a></li>
+
+            <li>
+
+                <a href="#">Stats &#9662;</a>
+
+                <ul class="dropdown">
+
+                    <li><a href="#">Scores</a></li>
+
+                    <li><a href="#">Records</a></li>
+
+                    <li><a href="#">Awards</a></li>
+
+                </ul>
+
+            </li>
+			<li><a href="#">Teams</a></li>
+
+            <li><a href="#">Blog</a></li>
+
+        </ul>
+
+		<div class="bg">
+		<div class="mySlides">
+		  <img class="1" src="pic1.jpg" >
+		  <p >
+			Dion Waiters with a dagger three at the buzzer.</p>
+		</div>
+		<div class="mySlides">
+		  <img class="1" src="pic2.jpg" >
+		  <p>
+			 Al Horford with the hammer.</p>
+		
+		</div>
+		<div class="mySlides">
+		  <img class="1" src="pic3.jpg">
+		  <p>
+			LeBron James with the dunk.	</p>
+			
+		</div>
+		<br/>
+		<a href = "#" style="font-size:150%;color:black;margin:5%">Dwyane Wade Signs with the Cavaliers on Veterans Minimum</a>
+		<br/>
+		<br/>
+		<a href = "#" style="font-size:150%;color:black;margin:5%">San Antonio Projected to win at least 62 games this season</a>
+		<br/>
+		<br/>
+		<a href = "#" style="font-size:150%;color:black;margin:5%">Paul George out for 6-8 months due to torn ACL</a>
+		<br/>
+		<br/>
+		<a href = "#" style="font-size:150%;color:black;margin:5%">Naveen's take on the Carmelo Anthony trade to the Thunder</a>
+
+		</div>
+
+		<script>
+		var slideIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+			  x[i].style.display = "none"; 
+			}
+			slideIndex++;
+			if (slideIndex > x.length) {slideIndex = 1} 
+			x[slideIndex-1].style.display = "block"; 
+			setTimeout(carousel, 5000); // Change image every 2 seconds
+			}
+		</script>
+		
+		<div class="bg1">
+		<h2 style="position:absolute;top:90px;left:5%;color:white">Standings</h2>
+		<table class="Eastern" align="center">
+			<thead>
+			<tr>
+			<th>Rank</span></th>
+			<th>Eastern</th>
+			<th>W</th>
+			<th>L</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td>1</td>
+			<td>Indiana</td>
+			<td>52</td>
+			<td>22</td>
+			</tr>
+			<tr>
+			<td>2</td>
+			<td>Miami</td>
+			<td>50</td>
+			<td>22</td>
+			</tr>
+			<tr>
+			<td>3</td>
+			<td>Toronto</td>
+			<td>42</td>
+			<td>31</td>
+			</tr>
+			<tr>
+			<td>4</td>
+			<td>Chicago</td>
+			<td>41</td>
+			<td>32</td>
+			</tr>
+			<tr>
+			<td>5</td>
+			<td>Brooklyn</td>
+			<td>39</td>
+			<td>33</td>
+			</tr>
+			<tr>
+			<td>6</td>
+			<td>Washington</td>
+			<td>38</td>
+			<td>35</td>
+			</tr>
+			<tr>
+			<td>7</td>
+			<td>Charlotte</td>
+			<td>35</td>
+			<td>38</td>
+			</tr>
+			<tr>
+			<td>8</td>
+			<td>Atlanta</td>
+			<td>31</td>
+			<td>41</td>
+			</tr>
+			</tbody>
+			</table>
+		<table class="Western" align="Center">
+			<thead>
+			<tr>
+			<th>Rank</th>
+			<th>Western</th>
+			<th>W</th>
+			<th>L</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td>1</td>
+			<td>San Antonio</td>
+			<td>57</td>
+			<td>16</td>
+			</tr>
+			<tr>
+			<td>2</td>
+			<td>Oklahoma City</td>
+			<td>54</td>
+			<td>19</td>
+			</tr>
+			<tr>
+			<td>3</td>
+			<td>L.A. Clippers</td>
+			<td>52</td>
+			<td>22</td>
+			</tr>
+			<tr>
+			<td>4</td>
+			<td>Houston</td>
+			<td>49</td>
+			<td>23</td>
+			</tr>
+			<tr>
+			<td>5</td>
+			<td>Portland</td>
+			<td>48</td>
+			<td>27</td>
+			</tr>
+			<tr>
+			<td>6</td>
+			<td>Golden State</td>
+			<td>45</td>
+			<td>28</td>
+			</tr>
+			<tr>
+			<td>7</td>
+			<td>Phoenix</td>
+			<td>44</td>
+			<td>30</td>
+			</tr>
+			<tr>
+			<td>8</td>
+			<td>Dallas</td>
+			<td>44</td>
+			<td>30</td>
+			</tr>
+			</tbody>
+		</table>
+		<h2 style="color:white;position:absolute;top:90px;left:60%">Recent Scores</h2>
+		</div>
+
+
+    </body>
+
+    </html>
+
